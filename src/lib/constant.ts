@@ -1,3 +1,4 @@
+import { Home, Settings } from "lucide-react"
 
 export const clients = [...new Array(10)].map((client, index) => ({
   href: `/${index + 1}.png`,
@@ -82,5 +83,10 @@ export const products = [
     link: 'https://efreeinvoice.com',
     thumbnail: '/p3.png',
   },
+]
+
+export const menuOptions = [
+  { name: 'Dashboard', Component: Home, href: '/dashboard' },
+  { name: 'Settings', Component: Settings, href: '/settings' },
 ]
 
